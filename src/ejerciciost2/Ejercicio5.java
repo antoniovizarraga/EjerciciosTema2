@@ -25,7 +25,7 @@ public class Ejercicio5 {
 				 * según como le especificamos (Dí primero
 				 * el primer valor, y luego el segundo. Después
 				 * comprueba si son iguales. De ser iguales, dí
-				 * que son iguales. Y si nada se cumple, el
+				 * que son iguales. Y si nada se cumple,
 				 * muestra el segundo valor y luegp el
 				 * primero.  */
 				
