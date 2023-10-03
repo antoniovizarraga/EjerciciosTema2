@@ -28,6 +28,7 @@ public class Ejercicio5 {
 				 * que son iguales. Y si nada se cumple, el
 				 * muestra el segundo valor y luegp el
 				 * primero.  */
+				
 				if(secondValue < firstValue) {
 					System.out.println(firstValue + ", " + secondValue);
 				} else if (firstValue == secondValue) {
