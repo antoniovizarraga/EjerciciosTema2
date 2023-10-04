@@ -8,17 +8,20 @@ public class Ejercicio5 {
 	 * en pantalla de mayor a menor. */
 	public static void main(String[] args) {
 		// Creamos los valores a introducir y los inicializamos.
-				int firstValue, secondValue = 0;
+				int num1, num2, num3 = 0;
 				
 				// Creamos el Scanner.
 				Scanner sc = new Scanner(System.in);
 				
 				// Pedimos los valores.
 				System.out.print("Introduzca un valor entero: ");
-				firstValue = sc.nextInt();
+				num1 = sc.nextInt();
 				
 				System.out.print("Introduzca el segundo valor: ");
-				secondValue = sc.nextInt();
+				num2 = sc.nextInt();
+				
+				System.out.print("Introduzca el tercer valor: ");
+				num3 = sc.nextInt();
 				
 				/* Comprobamos si el primer valor es mayor
 				 * que el segundo. En ese caso, ordénalos
@@ -29,13 +32,28 @@ public class Ejercicio5 {
 				 * muestra el segundo valor y luegp el
 				 * primero.  */
 				
-				if(secondValue < firstValue) {
-					System.out.println(firstValue + ", " + secondValue);
-				} else if (firstValue == secondValue) {
-					System.out.println("Los dos valores introducidos son iguales.");
-				} else {
-					System.out.println(secondValue + ", " + firstValue);
-				}
+				if (num1 >= num2 && num1 >= num3) {
+		            System.out.print(num1 + ", ");
+		            if (num2 >= num3) {
+		                System.out.println(num2 + ", " + num3);
+		            } else {
+		                System.out.println(num3 + ", " + num2);
+		            }
+		        } else if (num2 >= num1 && num2 >= num3) {
+		            System.out.print(num2 + ", ");
+		            if (num1 >= num3) {
+		                System.out.println(num1 + ", " + num3);
+		            } else {
+		                System.out.println(num3 + ", " + num1);
+		            }
+		        } else {
+		            System.out.print(num3 + ", ");
+		            if (num1 >= num2) {
+		                System.out.println(num1 + ", " + num2);
+		            } else {
+		                System.out.println(num2 + ", " + num1);
+		            }
+		        }
 				
 				// Cerramos el Scanner.
 				sc.close();
