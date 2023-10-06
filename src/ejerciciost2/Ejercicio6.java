@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
-		double a, b, c, x = 0;
+		double a, b, c, x1, x2 = 0;
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -20,11 +20,12 @@ public class Ejercicio6 {
 		double discriminant = Math.pow(b, 2) - (4 * a * c);
 		
 		if(a == 0) {
-			x = -c / b;
-			System.out.println("La solución de la ecuación es: " + x);
+			x1 = -c / b;
+			System.out.println("La ecuación sólo tiene una solución: " + x1);
 		} else if (discriminant > 0 ) {
-			x = discriminant / (2 * a);
-			System.out.println("La solución es: " + x);
+			x1 = (-b + Math.sqrt(discriminant)) / 2 * a;
+			x2 = (-b - Math.sqrt(discriminant)) / 2 * a;
+			System.out.println("Las soluciones son:\n" + x1 +  "\n" + x2);
 		} else if(discriminant < 0) {
 			System.out.println("La solución no es posible.");
 		}
